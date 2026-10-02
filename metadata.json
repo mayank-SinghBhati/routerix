@@ -1,0 +1,7 @@
+{
+  "name": "RouteRix",
+  "description": "QPSO traffic allocation simulator on Bhopal roads",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

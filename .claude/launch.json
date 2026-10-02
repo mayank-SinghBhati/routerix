@@ -1,0 +1,9 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "api", "runtimeExecutable": "backend/.venv/Scripts/uvicorn.exe", "runtimeArgs": ["main:app", "--app-dir", "backend", "--port", "8000"], "port": 8000 },
+    { "name": "web", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000 },
+    { "name": "api-alt", "runtimeExecutable": "backend/.venv/Scripts/uvicorn.exe", "runtimeArgs": ["main:app", "--app-dir", "backend", "--port", "8001"], "port": 8001, "autoPort": false, "env": { "ROUTERIX_DB": "backend/data/routerix-dev.db" } },
+    { "name": "web-alt", "runtimeExecutable": "npx", "runtimeArgs": ["next", "dev", "--port", "3001"], "port": 3001, "autoPort": false, "env": { "API_URL": "http://127.0.0.1:8001", "NEXT_DIST_DIR": ".next-alt" } }
+  ]
+}
