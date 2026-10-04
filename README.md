@@ -255,54 +255,6 @@ routerix/
 └── package.json            # Dependencies and npm scripts
 ```
 
----
-
-## Getting Started
-
-### Prerequisites
-
-- **Node.js**: v20 or higher
-- **npm**: v10 or higher
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mayank-SinghBhati/routerix.git
-   cd routerix
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Configure environment variables (optional for SMTP email delivery):
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
-
-### Production Build
-
-To test the production standalone bundle:
-
-```bash
-npm run build
-npm run start
-```
-
----
-
 ## Demo & Evaluation Access
 
 RouteRix includes a pre-seeded evaluator account loaded with historical simulation data and corridor statistics:
